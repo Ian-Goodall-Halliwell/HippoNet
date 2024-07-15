@@ -1,0 +1,185 @@
+[02:01:00] [Thread-4/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[02:01:00] [EnvServerSocketHandler/INFO]: Received Mission token a9de4b27-6b3f-4f8f-9047-4c1a2926a475:0:0:1:true
+[02:01:00] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>a9de4b27-6b3f-4f8f-9047-4c1a2926a475</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:01:00] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:01:00] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:01:00] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:01:00] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:01:00] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: 5218141872031791230
+[02:01:00] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:00] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:00] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:00] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:00] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:00] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:01:00] [Render thread/INFO]: Loaded 7 recipes
+[02:01:01] [Render thread/INFO]: Loaded 927 advancements
+[02:01:01] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:01:01] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:01:01] [Render thread/INFO]: Generating keypair
+[02:01:03] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:01:08] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:01:08] [Render thread/INFO]: MineRLAgent0[local:E:01a292ef] logged in with entity id 280 at (594.5, 69.0, 650.5)
+[02:01:08] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:01:08] [Render thread/INFO]: Preparing spawn area: 1%
+[02:01:08] [Render thread/INFO]: Time elapsed: 3 ms
+[02:01:08] [Render thread/INFO]: [STDOUT]: *** creating fake mouse cursor ***
+[02:01:09] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:01:09] [Render thread/INFO]: Saving and pausing game...
+[02:01:09] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldfddb9749702b]'/minecraft:overworld
+[02:01:09] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldfddb9749702b]'/minecraft:the_nether
+[02:01:09] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldfddb9749702b]'/minecraft:the_end
+[02:01:09] [Render thread/INFO]: Loaded 0 advancements
+[02:01:12] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
+[02:01:12] [EnvServerSocketHandler/INFO]: Received Mission token 306c10c2-1c34-412a-befc-3ff4664a73b2:0:0:1:true
+[02:01:12] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>306c10c2-1c34-412a-befc-3ff4664a73b2</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:01:12] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:01:12] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:01:12] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:01:12] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:01:12] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: -4526997174614483249
+[02:01:12] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:12] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:12] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:12] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:01:12] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:01:12] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:01:12] [Render thread/INFO]: Loaded 7 recipes
+[02:01:13] [Render thread/INFO]: Loaded 927 advancements
+[02:01:13] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:01:13] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:01:13] [Render thread/INFO]: Generating keypair
+[02:01:14] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:01:19] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:01:19] [Render thread/INFO]: MineRLAgent0[local:E:e6a0dae3] logged in with entity id 842 at (-205.5, 64.0, -837.5)
+[02:01:19] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:01:19] [Render thread/INFO]: Time elapsed: 0 ms
+[02:01:20] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:01:20] [Render thread/INFO]: Saving and pausing game...
+[02:01:20] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1804a4b41ede]'/minecraft:overworld
+[02:01:20] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1804a4b41ede]'/minecraft:the_nether
+[02:01:20] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1804a4b41ede]'/minecraft:the_end
+[02:01:20] [Render thread/INFO]: Loaded 0 advancements
+[02:04:52] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
+[02:04:52] [EnvServerSocketHandler/INFO]: Received Mission token 602a5c2b-c25f-4205-946b-70bd24882a9c:0:0:1:true
+[02:04:52] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>602a5c2b-c25f-4205-946b-70bd24882a9c</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:04:52] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:04:52] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:04:52] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:04:52] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:04:52] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: -581996300852989565
+[02:04:52] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:04:52] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:04:52] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:04:52] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:04:52] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:04:52] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:04:52] [Render thread/INFO]: Loaded 7 recipes
+[02:04:52] [Render thread/INFO]: Loaded 927 advancements
+[02:04:52] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:04:52] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:04:52] [Render thread/INFO]: Generating keypair
+[02:04:53] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:04:58] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:04:58] [Render thread/INFO]: MineRLAgent0[local:E:1c3dfdbf] logged in with entity id 2266 at (-253.5, 74.0, -421.5)
+[02:04:58] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:04:58] [Render thread/INFO]: Time elapsed: 0 ms
+[02:04:58] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:04:58] [Render thread/INFO]: Saving and pausing game...
+[02:04:58] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld97cd2b6eda65]'/minecraft:overworld
+[02:04:58] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld97cd2b6eda65]'/minecraft:the_nether
+[02:04:58] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld97cd2b6eda65]'/minecraft:the_end
+[02:04:59] [Render thread/INFO]: Loaded 0 advancements
+[02:07:43] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
+[02:07:43] [EnvServerSocketHandler/INFO]: Received Mission token 55da5c19-1662-43ec-9ae2-d1752daca9d6:0:0:1:true
+[02:07:43] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>55da5c19-1662-43ec-9ae2-d1752daca9d6</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:07:43] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:07:43] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:07:43] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:07:43] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:07:43] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: 2486469407626289099
+[02:07:43] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:07:43] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:07:43] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:07:43] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:07:43] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:07:43] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:07:43] [Render thread/INFO]: Loaded 7 recipes
+[02:07:43] [Render thread/INFO]: Loaded 927 advancements
+[02:07:43] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:07:43] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:07:43] [Render thread/INFO]: Generating keypair
+[02:07:45] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:07:50] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:07:50] [Render thread/INFO]: MineRLAgent0[local:E:bf49b50f] logged in with entity id 3574 at (1010.5, 64.0, 1002.5)
+[02:07:50] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:07:50] [Render thread/INFO]: Preparing spawn area: 50%
+[02:07:50] [Render thread/INFO]: Time elapsed: 1 ms
+[02:07:50] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:07:50] [Render thread/INFO]: Saving and pausing game...
+[02:07:50] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld7ba6817a01f8]'/minecraft:overworld
+[02:07:50] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld7ba6817a01f8]'/minecraft:the_nether
+[02:07:50] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld7ba6817a01f8]'/minecraft:the_end
+[02:07:51] [Render thread/INFO]: Loaded 0 advancements
+[02:10:17] [Render thread/INFO]: Loaded 7 advancements
+[02:10:29] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
+[02:10:29] [EnvServerSocketHandler/INFO]: Received Mission token 16b918a4-20e5-4ee9-8690-9c1a0c6031f6:0:0:1:true
+[02:10:29] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>16b918a4-20e5-4ee9-8690-9c1a0c6031f6</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:10:29] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:10:29] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:10:29] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:10:29] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:10:29] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: 4413259624286989533
+[02:10:29] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:10:29] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:10:29] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:10:29] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:10:29] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:10:29] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:10:29] [Render thread/INFO]: Loaded 7 recipes
+[02:10:29] [Render thread/INFO]: Loaded 927 advancements
+[02:10:29] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:10:29] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:10:29] [Render thread/INFO]: Generating keypair
+[02:10:30] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:10:34] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:10:34] [Render thread/INFO]: MineRLAgent0[local:E:e83979b8] logged in with entity id 5053 at (-829.5, 64.0, 298.5)
+[02:10:34] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:10:35] [Render thread/INFO]: Preparing spawn area: 21%
+[02:10:35] [Render thread/INFO]: Time elapsed: 1 ms
+[02:10:35] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:10:35] [Render thread/INFO]: Saving and pausing game...
+[02:10:35] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld5f8116fcc6a4]'/minecraft:overworld
+[02:10:35] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld5f8116fcc6a4]'/minecraft:the_nether
+[02:10:35] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld5f8116fcc6a4]'/minecraft:the_end
+[02:10:35] [Render thread/INFO]: Loaded 0 advancements
+[02:14:45] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
+[02:14:45] [EnvServerSocketHandler/INFO]: Received Mission token 3fa98eba-1228-4781-bd9d-03337c625270:0:0:1:true
+[02:14:45] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>3fa98eba-1228-4781-bd9d-03337c625270</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
+[02:14:45] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
+[02:14:45] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
+[02:14:45] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
+[02:14:45] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
+[02:14:45] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: -4546604585606943818
+[02:14:45] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:14:45] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:14:45] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:14:45] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
+[02:14:45] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
+[02:14:45] [Render thread/INFO]: Reloading ResourceManager: Default
+[02:14:45] [Render thread/INFO]: Loaded 7 recipes
+[02:14:45] [Render thread/INFO]: Loaded 927 advancements
+[02:14:45] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[02:14:45] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
+[02:14:45] [Render thread/INFO]: Generating keypair
+[02:14:47] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
+[02:14:52] [Render thread/INFO]: Changing view distance to 11, from 10
+[02:14:52] [Render thread/INFO]: MineRLAgent0[local:E:8edf0273] logged in with entity id 6728 at (-365.5, 64.0, 682.5)
+[02:14:52] [Render thread/INFO]: MineRLAgent0 joined the game
+[02:14:53] [Render thread/INFO]: Time elapsed: 0 ms
+[02:14:53] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:14:53] [Render thread/INFO]: Saving and pausing game...
+[02:14:53] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1d33bcc8805e]'/minecraft:overworld
+[02:14:53] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1d33bcc8805e]'/minecraft:the_nether
+[02:14:53] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworld1d33bcc8805e]'/minecraft:the_end
+[02:14:54] [Render thread/INFO]: Loaded 0 advancements

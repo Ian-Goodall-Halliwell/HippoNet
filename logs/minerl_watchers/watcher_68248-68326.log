@@ -1,0 +1,2 @@
+2024-07-14 22:45:21 Computinator process_watcher[68395] INFO Process watcher started between parent 68248 and child 68326 
+2024-07-14 22:47:37 Computinator process_watcher[68395] INFO Child is not running anymore, launcher can terminate.
