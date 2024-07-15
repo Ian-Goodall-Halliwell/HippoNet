@@ -1,0 +1,9 @@
+2024-07-14 19:09:40 Computinator process_watcher[75980] INFO Process watcher started between parent 75841 and child 75906 
+2024-07-14 19:10:31 Computinator process_watcher[75980] INFO Parent is not running, hence we need terminate the child.
+2024-07-14 19:10:31 Computinator process_watcher[75980] INFO About to reap process tree of 75906:launchClient.sh:/usr/bin/bash i sleeping, owner 44067, printing process tree status in termination order:
+2024-07-14 19:10:31 Computinator process_watcher[75980] INFO 	-75910:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 75906
+2024-07-14 19:10:31 Computinator process_watcher[75980] INFO 	-75906:launchClient.sh:/usr/bin/bash i sleeping, owner 44067
+2024-07-14 19:10:31 Computinator process_watcher[75980] INFO Trying to SIGTERM 75910:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 75906
+2024-07-14 19:10:36 Computinator process_watcher[75980] INFO Process 75910 survived SIGTERM; trying SIGKILL on 75910:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 75906
+2024-07-14 19:10:37 Computinator process_watcher[75980] INFO Process psutil.Process(pid=75910, name='java', status='terminated', started='19:09:39') terminated with exit code None
+2024-07-14 19:10:37 Computinator process_watcher[75980] INFO Process psutil.Process(pid=75906, name='launchClient.sh', status='terminated', started='19:09:39') does not exist or is zombie.

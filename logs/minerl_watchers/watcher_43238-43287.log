@@ -1,0 +1,2 @@
+2024-07-14 18:06:35 Computinator process_watcher[43353] INFO Process watcher started between parent 43238 and child 43287 
+2024-07-14 18:11:37 Computinator process_watcher[43353] INFO Parent is not running, hence we need terminate the child.
