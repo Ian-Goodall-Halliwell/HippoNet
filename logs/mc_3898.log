@@ -1,0 +1,583 @@
+[17:31:05] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>Playthrough</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>true</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>true</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <DefaultWorldGenerator forceReset="false" seed="" generatorOptions="{}"/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+                <Placement x="0" y="0" z="0" yaw="12" pitch="10"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>512</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+                <ObservationFromGrid>                      
+                <Grid name="voxels">                        
+                    <min x="-1" y="-1" z="-1"/>                        
+                    <max x="1" y="1" z="1"/>                      
+                </Grid>                  
+            </ObservationFromGrid>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        1452fa16-e1fc-4063-933c-0e75e868b047
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[17:31:05] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[17:31:06] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[17:31:06] [Client thread/INFO]: [STDOUT]: Mission received: Playthrough
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[17:31:06] [Client thread/INFO]: [STDOUT]: Starting command server.
+[17:31:06] [Thread-11/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10690
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[17:31:06] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[17:31:06] [Client thread/INFO]: [STDOUT]: [LOGTOPY] GENERATOR OPTIONS = {}
+[17:31:06] [Client thread/INFO]: Mixing MixinWorldProviderSpawn from mixins.overclocking.malmomod.json into net.minecraft.world.WorldProvider
+[17:31:06] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[17:31:06] [Server thread/INFO]: Generating keypair
+[17:31:06] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[17:31:06] [Server thread/INFO]: Applying holder lookups
+[17:31:06] [Server thread/INFO]: Holder lookups applied
+[17:31:06] [Server thread/INFO]: Loading dimension 0 (TEMP_0_9d409ec4-b1a8-4bab-a7aa-ddd73ed9ce93) (net.minecraft.server.integrated.IntegratedServer@62cab061)
+[17:31:07] [Server thread/INFO]: Loading dimension 1 (TEMP_0_9d409ec4-b1a8-4bab-a7aa-ddd73ed9ce93) (net.minecraft.server.integrated.IntegratedServer@62cab061)
+[17:31:07] [Server thread/INFO]: Loading dimension -1 (TEMP_0_9d409ec4-b1a8-4bab-a7aa-ddd73ed9ce93) (net.minecraft.server.integrated.IntegratedServer@62cab061)
+[17:31:07] [Server thread/INFO]: Preparing start region for level 0
+[17:31:08] [Server thread/INFO]: Preparing spawn area: 40%
+[17:31:09] [Server thread/INFO]: Preparing spawn area: 89%
+[17:31:09] [Server thread/INFO]: Changing view distance to 4, from 10
+[17:31:09] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[17:31:09] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[17:31:09] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[17:31:09] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[17:31:09] [Netty Server IO #1/INFO]: Client protocol version 2
+[17:31:09] [Netty Server IO #1/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[17:31:09] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[17:31:09] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[17:31:09] [Server thread/INFO]: [Server thread] Server side modded connection established
+[17:31:09] [Server thread/INFO]: MineDojoAgent0[local:E:9163e36d] logged in with entity id 640 at (67.5, 69.0, 210.5)
+[17:31:09] [Server thread/INFO]: MineDojoAgent0 joined the game
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[17:31:09] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[17:31:09] [Server thread/INFO]: [STDOUT]: Mission received: Playthrough
+[17:31:09] [Server thread/INFO]: Received mission: §9Playthrough
+[17:31:09] [Server thread/INFO]: Source: §alocalhost
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[17:31:09] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[17:31:09] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[17:31:09] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[17:31:10] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[17:31:10] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[17:31:10] [Client thread/INFO]: Mixing MixinRandomSkinTexture from mixins.overclocking.malmomod.json into net.minecraft.client.resources.DefaultPlayerSkin
+[17:31:10] [Client thread/INFO]: [CHAT] Received mission: §9Playthrough
+[17:31:10] [Client thread/INFO]: [CHAT] Source: §alocalhost
+[17:31:10] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[17:31:10] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[17:31:10] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[17:31:10] [Client thread/INFO]: [STDOUT]: [LOGTOPY] On Mac OSX Catalina make sure to install this OpenJDK 1.8.0_152-release-1056-b12, this prevents the NSDragRegions crash
+[17:31:10] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Client thread/INFO]: [STDOUT]: Resized the window
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Client thread/INFO]: [STDOUT]: Unpausing
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:10] [Server thread/INFO]: [STDOUT]: Warning skipped damage event - multiple damage events in one tick!
+[17:31:10] [Server thread/INFO]: [STDOUT]: This damage event will be marked as stale=True.
+[17:31:12] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[17:31:12] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 0.0,0.0]
+[17:31:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:12] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around 0.0,0.0 (min 0.0 blocks apart)
+[17:31:12] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 0.0,0.0
+[17:31:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:13] [Server thread/INFO]: [STDOUT]: Warning: managed 18/20 ticks this second.
+[17:31:13] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:14] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:14] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:15] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:15] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:16] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:16] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:17] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:17] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:17] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:18] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:18] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:20] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:20] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:20] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:20] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:21] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:21] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:21] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:21] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:22] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:22] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:22] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:23] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:23] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:23] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:23] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:24] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:24] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:25] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:26] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:26] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:26] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:27] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:27] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:27] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:28] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:28] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:28] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:29] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:29] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:29] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:30] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:30] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:30] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:30] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:30] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:31] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:31] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:31] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:32] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:33] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:33] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:33] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:33] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:33] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:34] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:34] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:34] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:34] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:35] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:35] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:35] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:35] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 486.0,-94.0]
+[17:31:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:35] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around 486.0,-94.0 (min 0.0 blocks apart)
+[17:31:35] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 486.0,-94.0
+[17:31:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:36] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:36] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:37] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[17:31:37] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:38] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:38] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:39] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:39] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:40] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:41] [Server thread/INFO]: [STDOUT]: Warning: managed 8/20 ticks this second.
+[17:31:41] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:41] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:42] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:43] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:44] [Server thread/INFO]: [STDOUT]: Warning: managed 17/20 ticks this second.
+[17:31:45] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:45] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:46] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:48] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:48] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:48] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:49] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:50] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:50] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:51] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:51] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:52] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:52] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:53] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:53] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:55] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:55] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:31:55] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:56] [Client thread/INFO]: [STDOUT]: Released 32
+[17:31:57] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:31:58] [Client thread/INFO]: [STDOUT]: Released 17
+[17:31:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:31:58] [Client thread/INFO]: [STDOUT]: Released 30
+[17:31:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:31:59] [Client thread/INFO]: [STDOUT]: Released 31
+[17:31:59] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:00] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:01] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:01] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:01] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:02] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:02] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:03] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:03] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:03] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:03] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:04] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:06] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:06] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:06] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:06] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:07] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:07] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:07] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:08] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:08] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:09] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:09] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:09] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 417.0,-326.0]
+[17:32:09] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:09] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around 417.0,-326.0 (min 0.0 blocks apart)
+[17:32:09] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 417.0,-326.0
+[17:32:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:11] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:11] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:12] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:12] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:12] [Server thread/INFO]: [STDOUT]: Warning: managed 17/20 ticks this second.
+[17:32:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:13] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:14] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:15] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:15] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:16] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:16] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:16] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:17] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:17] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:17] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:17] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:19] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:20] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:20] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:22] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:23] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:24] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:25] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[17:32:25] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:25] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:26] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:26] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:27] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:28] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:28] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:29] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:29] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:31] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:31] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:32] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:32] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:33] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:35] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:35] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:35] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:36] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:36] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:36] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:38] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:39] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:39] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:39] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:40] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:41] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:41] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:42] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:42] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:42] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:42] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 1106.0,483.0]
+[17:32:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:42] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around 1106.0,483.0 (min 0.0 blocks apart)
+[17:32:42] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 1106.0,483.0
+[17:32:43] [Client thread/INFO]: [STDOUT]: Released 17
+[17:32:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[17:32:43] [Client thread/INFO]: [STDOUT]: Released 31
+[17:32:44] [Client thread/INFO]: [STDOUT]: Released 30
+[17:32:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[17:32:44] [Client thread/INFO]: [STDOUT]: Pressed 17
+[17:32:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[17:32:44] [Client thread/INFO]: [STDOUT]: Released 32
+[17:32:45] [Server thread/INFO]: [STDOUT]: Warning: managed 17/20 ticks this second.

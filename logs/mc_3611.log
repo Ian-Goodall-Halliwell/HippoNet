@@ -1,0 +1,1417 @@
+[00:32:18] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>Playthrough</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>true</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>true</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <DefaultWorldGenerator forceReset="false" seed="" generatorOptions="{}"/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>512</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+                <ObservationFromGrid>                      
+                <Grid name="voxels">                        
+                    <min x="-1" y="-1" z="-1"/>                        
+                    <max x="1" y="1" z="1"/>                      
+                </Grid>                  
+            </ObservationFromGrid>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        2fa03bdc-3475-4825-a80f-65720e44ed0c
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[00:32:18] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[00:32:19] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[00:32:19] [Client thread/INFO]: [STDOUT]: Mission received: Playthrough
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[00:32:19] [Client thread/INFO]: [STDOUT]: Starting command server.
+[00:32:19] [Thread-11/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10940
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[00:32:19] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[00:32:19] [Client thread/INFO]: [STDOUT]: [LOGTOPY] GENERATOR OPTIONS = {}
+[00:32:19] [Client thread/INFO]: Mixing MixinWorldProviderSpawn from mixins.overclocking.malmomod.json into net.minecraft.world.WorldProvider
+[00:32:19] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[00:32:19] [Server thread/INFO]: Generating keypair
+[00:32:19] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[00:32:19] [Server thread/INFO]: Applying holder lookups
+[00:32:19] [Server thread/INFO]: Holder lookups applied
+[00:32:19] [Server thread/INFO]: Loading dimension 0 (TEMP_0_86dd7037-7d67-47c7-a56b-77fb8561937b) (net.minecraft.server.integrated.IntegratedServer@5fcf6b9c)
+[00:32:19] [Server thread/INFO]: Loading dimension 1 (TEMP_0_86dd7037-7d67-47c7-a56b-77fb8561937b) (net.minecraft.server.integrated.IntegratedServer@5fcf6b9c)
+[00:32:19] [Server thread/INFO]: Loading dimension -1 (TEMP_0_86dd7037-7d67-47c7-a56b-77fb8561937b) (net.minecraft.server.integrated.IntegratedServer@5fcf6b9c)
+[00:32:19] [Server thread/INFO]: Preparing start region for level 0
+[00:32:20] [Server thread/INFO]: Preparing spawn area: 22%
+[00:32:21] [Server thread/INFO]: Preparing spawn area: 62%
+[00:32:22] [Server thread/INFO]: Changing view distance to 4, from 10
+[00:32:23] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[00:32:23] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[00:32:23] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[00:32:23] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[00:32:23] [Netty Server IO #1/INFO]: Client protocol version 2
+[00:32:23] [Netty Server IO #1/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[00:32:23] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[00:32:23] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[00:32:23] [Server thread/INFO]: [Server thread] Server side modded connection established
+[00:32:23] [Server thread/INFO]: MineDojoAgent0[local:E:0e44f330] logged in with entity id 619 at (247.5, 62.0, -259.5)
+[00:32:23] [Server thread/INFO]: MineDojoAgent0 joined the game
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[00:32:23] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[00:32:23] [Server thread/INFO]: [STDOUT]: Mission received: Playthrough
+[00:32:23] [Server thread/INFO]: Received mission: §9Playthrough
+[00:32:23] [Server thread/INFO]: Source: §alocalhost
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[00:32:23] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[00:32:23] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[00:32:23] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[00:32:24] [Client thread/INFO]: Mixing MixinRandomSkinTexture from mixins.overclocking.malmomod.json into net.minecraft.client.resources.DefaultPlayerSkin
+[00:32:24] [Client thread/INFO]: [CHAT] Received mission: §9Playthrough
+[00:32:24] [Client thread/INFO]: [CHAT] Source: §alocalhost
+[00:32:24] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[00:32:24] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[00:32:24] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[00:32:24] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[00:32:24] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[00:32:24] [Client thread/INFO]: [STDOUT]: [LOGTOPY] On Mac OSX Catalina make sure to install this OpenJDK 1.8.0_152-release-1056-b12, this prevents the NSDragRegions crash
+[00:32:24] [Client thread/INFO]: [STDOUT]: Resized the window
+[00:32:24] [Client thread/INFO]: [STDOUT]: Unpausing
+[00:32:24] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[00:32:24] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[00:32:28] [Server thread/INFO]: [STDOUT]: Warning: managed 6/20 ticks this second.
+[00:32:28] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 247.0,-260.0]
+[00:32:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:29] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around 247.0,-260.0 (min 0.0 blocks apart)
+[00:32:29] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 247.0,-260.0
+[00:32:29] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:29] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:29] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -113.0,-425.0]
+[00:32:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:29] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -113.0,-425.0 (min 0.0 blocks apart)
+[00:32:29] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -113.0,-425.0
+[00:32:29] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:29] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:29] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -85.0,-271.0]
+[00:32:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:29] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -85.0,-271.0 (min 0.0 blocks apart)
+[00:32:29] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -85.0,-271.0
+[00:32:29] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[00:32:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:30] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:30] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:30] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:30] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -78.0,-264.0]
+[00:32:30] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:30] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -78.0,-264.0 (min 0.0 blocks apart)
+[00:32:30] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -78.0,-264.0
+[00:32:30] [Server thread/INFO]: [STDOUT]: Warning: managed 8/20 ticks this second.
+[00:32:31] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:31] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:31] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -375.0,29.0]
+[00:32:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:31] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -375.0,29.0 (min 0.0 blocks apart)
+[00:32:31] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -375.0,29.0
+[00:32:31] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:31] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:31] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -400.0,162.0]
+[00:32:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:31] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -400.0,162.0 (min 0.0 blocks apart)
+[00:32:31] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -400.0,162.0
+[00:32:31] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:31] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -21.0,-199.0]
+[00:32:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:31] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -21.0,-199.0 (min 0.0 blocks apart)
+[00:32:31] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -21.0,-199.0
+[00:32:32] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:32:32] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:32] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -321.0,-438.0]
+[00:32:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:32] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -321.0,-438.0 (min 0.0 blocks apart)
+[00:32:32] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -321.0,-438.0
+[00:32:32] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:32] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:32] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -692.0,-628.0]
+[00:32:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:32] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -692.0,-628.0 (min 0.0 blocks apart)
+[00:32:32] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -692.0,-628.0
+[00:32:33] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:33] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:32:33] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -397.0,-701.0]
+[00:32:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:33] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -397.0,-701.0 (min 0.0 blocks apart)
+[00:32:33] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -397.0,-701.0
+[00:32:33] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:33] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -236.0,-1002.0]
+[00:32:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:33] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -236.0,-1002.0 (min 0.0 blocks apart)
+[00:32:33] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -236.0,-1002.0
+[00:32:33] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:33] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:33] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -464.0,-651.0]
+[00:32:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:33] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -464.0,-651.0 (min 0.0 blocks apart)
+[00:32:33] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -464.0,-651.0
+[00:32:34] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[00:32:34] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:34] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:34] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -687.0,-628.0]
+[00:32:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:34] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -687.0,-628.0 (min 0.0 blocks apart)
+[00:32:34] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -687.0,-628.0
+[00:32:34] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:34] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:34] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -889.0,-255.0]
+[00:32:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:34] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -889.0,-255.0 (min 0.0 blocks apart)
+[00:32:34] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -889.0,-255.0
+[00:32:34] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:34] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -490.0,-494.0]
+[00:32:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:35] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -490.0,-494.0 (min 0.0 blocks apart)
+[00:32:35] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -490.0,-494.0
+[00:32:35] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:32:35] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:35] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -405.0,-322.0]
+[00:32:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:35] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -405.0,-322.0 (min 0.0 blocks apart)
+[00:32:35] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -405.0,-322.0
+[00:32:35] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:35] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:35] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -769.0,-127.0]
+[00:32:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:35] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -769.0,-127.0 (min 0.0 blocks apart)
+[00:32:35] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -769.0,-127.0
+[00:32:36] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:36] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:36] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -593.0,96.0]
+[00:32:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:36] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -593.0,96.0 (min 0.0 blocks apart)
+[00:32:36] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -593.0,96.0
+[00:32:36] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:36] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:36] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:36] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -870.0,244.0]
+[00:32:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:36] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -870.0,244.0 (min 0.0 blocks apart)
+[00:32:36] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -870.0,244.0
+[00:32:36] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:36] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -679.0,418.0]
+[00:32:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:36] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -679.0,418.0 (min 0.0 blocks apart)
+[00:32:36] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -679.0,418.0
+[00:32:37] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:37] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:37] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -778.0,107.0]
+[00:32:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:37] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -778.0,107.0 (min 0.0 blocks apart)
+[00:32:37] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -778.0,107.0
+[00:32:37] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:37] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -552.0,308.0]
+[00:32:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:37] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -552.0,308.0 (min 0.0 blocks apart)
+[00:32:37] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -552.0,308.0
+[00:32:37] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:37] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -760.0,380.0]
+[00:32:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:38] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -760.0,380.0 (min 0.0 blocks apart)
+[00:32:38] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -760.0,380.0
+[00:32:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:38] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:38] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:32:38] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:38] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -495.0,263.0]
+[00:32:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:38] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -495.0,263.0 (min 0.0 blocks apart)
+[00:32:38] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -495.0,263.0
+[00:32:38] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:38] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -637.0,466.0]
+[00:32:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:38] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -637.0,466.0 (min 0.0 blocks apart)
+[00:32:38] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -637.0,466.0
+[00:32:39] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:39] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -532.0,816.0]
+[00:32:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:39] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -532.0,816.0 (min 0.0 blocks apart)
+[00:32:39] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -532.0,816.0
+[00:32:39] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:32:39] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:39] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -905.0,1200.0]
+[00:32:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:39] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -905.0,1200.0 (min 0.0 blocks apart)
+[00:32:39] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -905.0,1200.0
+[00:32:39] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:39] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -670.0,1387.0]
+[00:32:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:40] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -670.0,1387.0 (min 0.0 blocks apart)
+[00:32:40] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -670.0,1387.0
+[00:32:40] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:40] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:40] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -580.0,1138.0]
+[00:32:40] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -580.0,1138.0 (min 0.0 blocks apart)
+[00:32:40] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -580.0,1138.0
+[00:32:40] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -668.0,1203.0]
+[00:32:40] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -668.0,1203.0 (min 0.0 blocks apart)
+[00:32:40] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -668.0,1203.0
+[00:32:41] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -882.0,1218.0]
+[00:32:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:41] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -882.0,1218.0 (min 0.0 blocks apart)
+[00:32:41] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -882.0,1218.0
+[00:32:41] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:41] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -897.0,1262.0]
+[00:32:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:41] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -897.0,1262.0 (min 0.0 blocks apart)
+[00:32:41] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -897.0,1262.0
+[00:32:41] [Server thread/INFO]: [STDOUT]: Warning: managed 17/20 ticks this second.
+[00:32:41] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:41] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -539.0,1124.0]
+[00:32:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:41] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -539.0,1124.0 (min 0.0 blocks apart)
+[00:32:41] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -539.0,1124.0
+[00:32:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:41] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:41] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:41] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -665.0,809.0]
+[00:32:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:42] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -665.0,809.0 (min 0.0 blocks apart)
+[00:32:42] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -665.0,809.0
+[00:32:42] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:42] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -897.0,1027.0]
+[00:32:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:42] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -897.0,1027.0 (min 0.0 blocks apart)
+[00:32:42] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -897.0,1027.0
+[00:32:42] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:42] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:42] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -653.0,674.0]
+[00:32:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:42] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -653.0,674.0 (min 0.0 blocks apart)
+[00:32:42] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -653.0,674.0
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:43] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -730.0,615.0]
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:43] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -730.0,615.0 (min 0.0 blocks apart)
+[00:32:43] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -730.0,615.0
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:43] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -496.0,500.0]
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:43] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -496.0,500.0 (min 0.0 blocks apart)
+[00:32:43] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -496.0,500.0
+[00:32:43] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:43] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:43] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -658.0,882.0]
+[00:32:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:43] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -658.0,882.0 (min 0.0 blocks apart)
+[00:32:43] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -658.0,882.0
+[00:32:44] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:44] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -551.0,1211.0]
+[00:32:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:44] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -551.0,1211.0 (min 0.0 blocks apart)
+[00:32:44] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -551.0,1211.0
+[00:32:44] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:44] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -896.0,1161.0]
+[00:32:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:44] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -896.0,1161.0 (min 0.0 blocks apart)
+[00:32:44] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -896.0,1161.0
+[00:32:44] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[00:32:44] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:44] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -937.0,1150.0]
+[00:32:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:44] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -937.0,1150.0 (min 0.0 blocks apart)
+[00:32:44] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -937.0,1150.0
+[00:32:44] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:44] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -872.0,819.0]
+[00:32:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:45] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -872.0,819.0 (min 0.0 blocks apart)
+[00:32:45] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -872.0,819.0
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:45] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:45] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:45] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:45] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1089.0,946.0]
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:45] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1089.0,946.0 (min 0.0 blocks apart)
+[00:32:45] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1089.0,946.0
+[00:32:45] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:32:45] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:45] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:45] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1157.0,840.0]
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:45] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1157.0,840.0 (min 0.0 blocks apart)
+[00:32:45] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1157.0,840.0
+[00:32:46] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:46] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:46] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1182.0,589.0]
+[00:32:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:46] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1182.0,589.0 (min 0.0 blocks apart)
+[00:32:46] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1182.0,589.0
+[00:32:46] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:46] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1550.0,844.0]
+[00:32:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:46] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1550.0,844.0 (min 0.0 blocks apart)
+[00:32:46] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1550.0,844.0
+[00:32:46] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:46] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:46] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1916.0,500.0]
+[00:32:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:46] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1916.0,500.0 (min 0.0 blocks apart)
+[00:32:46] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1916.0,500.0
+[00:32:47] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:47] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:47] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1641.0,666.0]
+[00:32:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:47] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1641.0,666.0 (min 0.0 blocks apart)
+[00:32:47] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1641.0,666.0
+[00:32:47] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:47] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:47] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1936.0,309.0]
+[00:32:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:47] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1936.0,309.0 (min 0.0 blocks apart)
+[00:32:47] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1936.0,309.0
+[00:32:47] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:47] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2327.0,259.0]
+[00:32:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:48] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2327.0,259.0 (min 0.0 blocks apart)
+[00:32:48] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2327.0,259.0
+[00:32:48] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:48] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2443.0,138.0]
+[00:32:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:48] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2443.0,138.0 (min 0.0 blocks apart)
+[00:32:48] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2443.0,138.0
+[00:32:48] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:48] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:48] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2597.0,-54.0]
+[00:32:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:48] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2597.0,-54.0 (min 0.0 blocks apart)
+[00:32:48] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2597.0,-54.0
+[00:32:48] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:49] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2656.0,295.0]
+[00:32:49] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2656.0,295.0 (min 0.0 blocks apart)
+[00:32:49] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2656.0,295.0
+[00:32:49] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2547.0,391.0]
+[00:32:49] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2547.0,391.0 (min 0.0 blocks apart)
+[00:32:49] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2547.0,391.0
+[00:32:49] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:49] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2907.0,378.0]
+[00:32:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:49] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2907.0,378.0 (min 0.0 blocks apart)
+[00:32:49] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2907.0,378.0
+[00:32:50] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:50] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2587.0,405.0]
+[00:32:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:50] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2587.0,405.0 (min 0.0 blocks apart)
+[00:32:50] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2587.0,405.0
+[00:32:50] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:50] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2419.0,159.0]
+[00:32:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:50] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2419.0,159.0 (min 0.0 blocks apart)
+[00:32:50] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2419.0,159.0
+[00:32:50] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:50] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:50] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:50] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2751.0,224.0]
+[00:32:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:50] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2751.0,224.0 (min 0.0 blocks apart)
+[00:32:50] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2751.0,224.0
+[00:32:51] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:51] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:51] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2937.0,449.0]
+[00:32:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:51] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2937.0,449.0 (min 0.0 blocks apart)
+[00:32:51] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2937.0,449.0
+[00:32:51] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:51] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:51] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2769.0,354.0]
+[00:32:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:51] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2769.0,354.0 (min 0.0 blocks apart)
+[00:32:51] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2769.0,354.0
+[00:32:51] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:32:51] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:51] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2742.0,61.0]
+[00:32:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:52] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2742.0,61.0 (min 0.0 blocks apart)
+[00:32:52] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2742.0,61.0
+[00:32:52] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:52] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2970.0,169.0]
+[00:32:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:52] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2970.0,169.0 (min 0.0 blocks apart)
+[00:32:52] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2970.0,169.0
+[00:32:52] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:52] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:32:52] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2687.0,85.0]
+[00:32:52] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2687.0,85.0 (min 0.0 blocks apart)
+[00:32:52] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2687.0,85.0
+[00:32:52] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2438.0,137.0]
+[00:32:52] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2438.0,137.0 (min 0.0 blocks apart)
+[00:32:52] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2438.0,137.0
+[00:32:53] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2178.0,323.0]
+[00:32:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:53] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2178.0,323.0 (min 0.0 blocks apart)
+[00:32:53] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2178.0,323.0
+[00:32:53] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:53] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:53] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2247.0,63.0]
+[00:32:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:53] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2247.0,63.0 (min 0.0 blocks apart)
+[00:32:53] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2247.0,63.0
+[00:32:53] [Server thread/INFO]: [STDOUT]: Warning: managed 18/20 ticks this second.
+[00:32:53] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:53] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:54] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2589.0,115.0]
+[00:32:54] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:54] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2589.0,115.0 (min 0.0 blocks apart)
+[00:32:54] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2589.0,115.0
+[00:32:54] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:54] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:54] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:54] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2212.0,59.0]
+[00:32:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:54] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2212.0,59.0 (min 0.0 blocks apart)
+[00:32:54] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2212.0,59.0
+[00:32:54] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:54] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2213.0,-169.0]
+[00:32:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:54] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2213.0,-169.0 (min 0.0 blocks apart)
+[00:32:54] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2213.0,-169.0
+[00:32:54] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:55] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1956.0,-385.0]
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:55] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1956.0,-385.0 (min 0.0 blocks apart)
+[00:32:55] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1956.0,-385.0
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:55] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2269.0,-153.0]
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:55] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2269.0,-153.0 (min 0.0 blocks apart)
+[00:32:55] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2269.0,-153.0
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:55] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2166.0,-50.0]
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:32:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:55] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2166.0,-50.0 (min 0.0 blocks apart)
+[00:32:55] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2166.0,-50.0
+[00:32:55] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:32:55] [Client thread/INFO]: [STDOUT]: Released 17
+[00:32:56] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:56] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2512.0,233.0]
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:56] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2512.0,233.0 (min 0.0 blocks apart)
+[00:32:56] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2512.0,233.0
+[00:32:56] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:56] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2637.0,408.0]
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:56] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2637.0,408.0 (min 0.0 blocks apart)
+[00:32:56] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2637.0,408.0
+[00:32:56] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:56] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2460.0,353.0]
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:56] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2460.0,353.0 (min 0.0 blocks apart)
+[00:32:56] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2460.0,353.0
+[00:32:56] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:56] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:56] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2460.0,224.0]
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:56] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2460.0,224.0 (min 0.0 blocks apart)
+[00:32:56] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2460.0,224.0
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:57] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2214.0,276.0]
+[00:32:57] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:57] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2214.0,276.0 (min 0.0 blocks apart)
+[00:32:57] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2214.0,276.0
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:57] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2171.0,49.0]
+[00:32:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:57] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2171.0,49.0 (min 0.0 blocks apart)
+[00:32:57] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2171.0,49.0
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:57] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2136.0,100.0]
+[00:32:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:57] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2136.0,100.0 (min 0.0 blocks apart)
+[00:32:57] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2136.0,100.0
+[00:32:57] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:57] [Server thread/INFO]: [STDOUT]: Warning: managed 18/20 ticks this second.
+[00:32:57] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2325.0,183.0]
+[00:32:57] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2325.0,183.0 (min 0.0 blocks apart)
+[00:32:57] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2325.0,183.0
+[00:32:58] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2568.0,-63.0]
+[00:32:58] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2568.0,-63.0 (min 0.0 blocks apart)
+[00:32:58] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2568.0,-63.0
+[00:32:58] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2626.0,8.0]
+[00:32:58] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2626.0,8.0 (min 0.0 blocks apart)
+[00:32:58] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2626.0,8.0
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:58] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2482.0,254.0]
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:58] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2482.0,254.0 (min 0.0 blocks apart)
+[00:32:58] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2482.0,254.0
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:58] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2795.0,282.0]
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:58] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2795.0,282.0 (min 0.0 blocks apart)
+[00:32:58] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2795.0,282.0
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:58] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2625.0,138.0]
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:58] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2625.0,138.0 (min 0.0 blocks apart)
+[00:32:58] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2625.0,138.0
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:59] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2405.0,377.0]
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:59] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2405.0,377.0 (min 0.0 blocks apart)
+[00:32:59] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2405.0,377.0
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:59] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2426.0,175.0]
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:59] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2426.0,175.0 (min 0.0 blocks apart)
+[00:32:59] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2426.0,175.0
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 32
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:59] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2714.0,409.0]
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:59] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2714.0,409.0 (min 0.0 blocks apart)
+[00:32:59] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2714.0,409.0
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:59] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2585.0,308.0]
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:32:59] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2585.0,308.0 (min 0.0 blocks apart)
+[00:32:59] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2585.0,308.0
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 31
+[00:32:59] [Client thread/INFO]: [STDOUT]: Released 30
+[00:32:59] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2399.0,40.0]
+[00:32:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:32:59] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2399.0,40.0 (min 0.0 blocks apart)
+[00:32:59] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2399.0,40.0
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:00] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2292.0,170.0]
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:00] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2292.0,170.0 (min 0.0 blocks apart)
+[00:33:00] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2292.0,170.0
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:00] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2407.0,241.0]
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:00] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2407.0,241.0 (min 0.0 blocks apart)
+[00:33:00] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2407.0,241.0
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:00] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2356.0,559.0]
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:00] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2356.0,559.0 (min 0.0 blocks apart)
+[00:33:00] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2356.0,559.0
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:00] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2622.0,342.0]
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:00] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2622.0,342.0 (min 0.0 blocks apart)
+[00:33:00] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2622.0,342.0
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:00] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:00] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2484.0,123.0]
+[00:33:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:00] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2484.0,123.0 (min 0.0 blocks apart)
+[00:33:00] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2484.0,123.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2349.0,-140.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2349.0,-140.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2349.0,-140.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2457.0,228.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2457.0,228.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2457.0,228.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2340.0,47.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2340.0,47.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2340.0,47.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2677.0,371.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2677.0,371.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2677.0,371.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2652.0,52.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2652.0,52.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2652.0,52.0
+[00:33:01] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:01] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2317.0,17.0]
+[00:33:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:01] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2317.0,17.0 (min 0.0 blocks apart)
+[00:33:01] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2317.0,17.0
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:02] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2406.0,-195.0]
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:02] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2406.0,-195.0 (min 0.0 blocks apart)
+[00:33:02] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2406.0,-195.0
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:02] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2703.0,-42.0]
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:02] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2703.0,-42.0 (min 0.0 blocks apart)
+[00:33:02] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2703.0,-42.0
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:02] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2546.0,-65.0]
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:02] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2546.0,-65.0 (min 0.0 blocks apart)
+[00:33:02] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2546.0,-65.0
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:02] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2322.0,26.0]
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:02] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2322.0,26.0 (min 0.0 blocks apart)
+[00:33:02] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2322.0,26.0
+[00:33:02] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:02] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2374.0,-13.0]
+[00:33:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:02] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2374.0,-13.0 (min 0.0 blocks apart)
+[00:33:02] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2374.0,-13.0
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:03] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2108.0,251.0]
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:03] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2108.0,251.0 (min 0.0 blocks apart)
+[00:33:03] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2108.0,251.0
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:03] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2155.0,96.0]
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:03] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2155.0,96.0 (min 0.0 blocks apart)
+[00:33:03] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2155.0,96.0
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:03] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2137.0,383.0]
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:03] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2137.0,383.0 (min 0.0 blocks apart)
+[00:33:03] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2137.0,383.0
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:03] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:03] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2405.0,387.0]
+[00:33:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:03] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2405.0,387.0 (min 0.0 blocks apart)
+[00:33:03] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2405.0,387.0
+[00:33:04] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:04] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2675.0,700.0]
+[00:33:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:04] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2675.0,700.0 (min 0.0 blocks apart)
+[00:33:04] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2675.0,700.0
+[00:33:04] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:04] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2869.0,368.0]
+[00:33:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:04] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2869.0,368.0 (min 0.0 blocks apart)
+[00:33:04] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2869.0,368.0
+[00:33:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:04] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:04] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:04] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2598.0,208.0]
+[00:33:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:04] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2598.0,208.0 (min 0.0 blocks apart)
+[00:33:04] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2598.0,208.0
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:05] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2896.0,164.0]
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:05] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2896.0,164.0 (min 0.0 blocks apart)
+[00:33:05] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2896.0,164.0
+[00:33:05] [Server thread/INFO]: [STDOUT]: Warning: managed 18/20 ticks this second.
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:05] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2987.0,23.0]
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:05] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2987.0,23.0 (min 0.0 blocks apart)
+[00:33:05] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2987.0,23.0
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:05] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2840.0,303.0]
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:05] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2840.0,303.0 (min 0.0 blocks apart)
+[00:33:05] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2840.0,303.0
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:05] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:05] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2766.0,417.0]
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:05] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2766.0,417.0 (min 0.0 blocks apart)
+[00:33:05] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2766.0,417.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:06] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2904.0,421.0]
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:06] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2904.0,421.0 (min 0.0 blocks apart)
+[00:33:06] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2904.0,421.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:06] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2893.0,401.0]
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:06] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2893.0,401.0 (min 0.0 blocks apart)
+[00:33:06] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2893.0,401.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:06] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2918.0,18.0]
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:06] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2918.0,18.0 (min 0.0 blocks apart)
+[00:33:06] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2918.0,18.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:06] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2802.0,337.0]
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:06] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2802.0,337.0 (min 0.0 blocks apart)
+[00:33:06] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2802.0,337.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:06] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2603.0,171.0]
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:06] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2603.0,171.0 (min 0.0 blocks apart)
+[00:33:06] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2603.0,171.0
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:06] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:07] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2834.0,44.0]
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:07] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2834.0,44.0 (min 0.0 blocks apart)
+[00:33:07] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2834.0,44.0
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:07] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2527.0,428.0]
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:07] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2527.0,428.0 (min 0.0 blocks apart)
+[00:33:07] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2527.0,428.0
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:07] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2924.0,214.0]
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:07] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2924.0,214.0 (min 0.0 blocks apart)
+[00:33:07] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2924.0,214.0
+[00:33:07] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:07] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2711.0,130.0]
+[00:33:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:07] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2711.0,130.0 (min 0.0 blocks apart)
+[00:33:07] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2711.0,130.0
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:08] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2723.0,-92.0]
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:08] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2723.0,-92.0 (min 0.0 blocks apart)
+[00:33:08] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2723.0,-92.0
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:08] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2385.0,149.0]
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:08] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2385.0,149.0 (min 0.0 blocks apart)
+[00:33:08] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2385.0,149.0
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:08] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2057.0,482.0]
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:08] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2057.0,482.0 (min 0.0 blocks apart)
+[00:33:08] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2057.0,482.0
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:08] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2309.0,94.0]
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:08] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2309.0,94.0 (min 0.0 blocks apart)
+[00:33:08] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2309.0,94.0
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:08] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:08] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2480.0,-41.0]
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:08] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2480.0,-41.0 (min 0.0 blocks apart)
+[00:33:08] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2480.0,-41.0
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2851.0,-7.0]
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:09] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2851.0,-7.0 (min 0.0 blocks apart)
+[00:33:09] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2851.0,-7.0
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2807.0,314.0]
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:09] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2807.0,314.0 (min 0.0 blocks apart)
+[00:33:09] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2807.0,314.0
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2450.0,177.0]
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:09] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2450.0,177.0 (min 0.0 blocks apart)
+[00:33:09] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2450.0,177.0
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2603.0,525.0]
+[00:33:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:09] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2603.0,525.0 (min 0.0 blocks apart)
+[00:33:09] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2603.0,525.0
+[00:33:09] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:09] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2820.0,793.0]
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2820.0,793.0 (min 0.0 blocks apart)
+[00:33:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2820.0,793.0
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:10] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2575.0,550.0]
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2575.0,550.0 (min 0.0 blocks apart)
+[00:33:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2575.0,550.0
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:10] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2713.0,636.0]
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2713.0,636.0 (min 0.0 blocks apart)
+[00:33:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2713.0,636.0
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:10] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2361.0,249.0]
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2361.0,249.0 (min 0.0 blocks apart)
+[00:33:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2361.0,249.0
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:10] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:10] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2334.0,163.0]
+[00:33:10] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2334.0,163.0 (min 0.0 blocks apart)
+[00:33:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2334.0,163.0
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:11] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2246.0,296.0]
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:11] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2246.0,296.0 (min 0.0 blocks apart)
+[00:33:11] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2246.0,296.0
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:11] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2154.0,595.0]
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:11] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2154.0,595.0 (min 0.0 blocks apart)
+[00:33:11] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2154.0,595.0
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:11] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2115.0,317.0]
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:11] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2115.0,317.0 (min 0.0 blocks apart)
+[00:33:11] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2115.0,317.0
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:11] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2191.0,189.0]
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:11] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2191.0,189.0 (min 0.0 blocks apart)
+[00:33:11] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2191.0,189.0
+[00:33:11] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:11] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2548.0,163.0]
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:11] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:11] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2548.0,163.0 (min 0.0 blocks apart)
+[00:33:11] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2548.0,163.0
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:12] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2337.0,-125.0]
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:12] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2337.0,-125.0 (min 0.0 blocks apart)
+[00:33:12] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2337.0,-125.0
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:12] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2383.0,111.0]
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:12] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2383.0,111.0 (min 0.0 blocks apart)
+[00:33:12] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2383.0,111.0
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:12] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2129.0,-132.0]
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:12] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2129.0,-132.0 (min 0.0 blocks apart)
+[00:33:12] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2129.0,-132.0
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:12] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:12] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1829.0,230.0]
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:12] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1829.0,230.0 (min 0.0 blocks apart)
+[00:33:12] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1829.0,230.0
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:13] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2041.0,92.0]
+[00:33:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:13] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2041.0,92.0 (min 0.0 blocks apart)
+[00:33:13] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2041.0,92.0
+[00:33:13] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:13] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2334.0,262.0]
+[00:33:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:13] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2334.0,262.0 (min 0.0 blocks apart)
+[00:33:13] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2334.0,262.0
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:13] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2625.0,399.0]
+[00:33:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:13] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2625.0,399.0 (min 0.0 blocks apart)
+[00:33:13] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2625.0,399.0
+[00:33:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:13] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:13] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2561.0,251.0]
+[00:33:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:13] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2561.0,251.0 (min 0.0 blocks apart)
+[00:33:13] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2561.0,251.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2793.0,566.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2793.0,566.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2793.0,566.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2487.0,459.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2487.0,459.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2487.0,459.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2401.0,479.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2401.0,479.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2401.0,479.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2663.0,193.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2663.0,193.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2663.0,193.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2850.0,403.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2850.0,403.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2850.0,403.0
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:14] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:14] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2582.0,168.0]
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:14] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2582.0,168.0 (min 0.0 blocks apart)
+[00:33:14] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2582.0,168.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:15] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2514.0,-104.0]
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:15] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2514.0,-104.0 (min 0.0 blocks apart)
+[00:33:15] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2514.0,-104.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:15] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2630.0,124.0]
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:15] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2630.0,124.0 (min 0.0 blocks apart)
+[00:33:15] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2630.0,124.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:15] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2470.0,141.0]
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:15] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2470.0,141.0 (min 0.0 blocks apart)
+[00:33:15] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2470.0,141.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:15] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2722.0,444.0]
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:15] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2722.0,444.0 (min 0.0 blocks apart)
+[00:33:15] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2722.0,444.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:15] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2422.0,351.0]
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:15] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2422.0,351.0 (min 0.0 blocks apart)
+[00:33:15] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2422.0,351.0
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:15] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2755.0,408.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2755.0,408.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2755.0,408.0
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2408.0,223.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2408.0,223.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2408.0,223.0
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2662.0,484.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2662.0,484.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2662.0,484.0
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2841.0,291.0]
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2841.0,291.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2841.0,291.0
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2465.0,205.0]
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2465.0,205.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2465.0,205.0
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2322.0,218.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2322.0,218.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2322.0,218.0
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2385.0,142.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2385.0,142.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2385.0,142.0
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:16] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:16] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2465.0,-143.0]
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:16] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2465.0,-143.0 (min 0.0 blocks apart)
+[00:33:16] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2465.0,-143.0
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:17] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2471.0,-24.0]
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2471.0,-24.0 (min 0.0 blocks apart)
+[00:33:17] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2471.0,-24.0
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:17] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2461.0,114.0]
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2461.0,114.0 (min 0.0 blocks apart)
+[00:33:17] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2461.0,114.0
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:17] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2640.0,287.0]
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2640.0,287.0 (min 0.0 blocks apart)
+[00:33:17] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2640.0,287.0
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:17] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2851.0,388.0]
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2851.0,388.0 (min 0.0 blocks apart)
+[00:33:17] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2851.0,388.0
+[00:33:17] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:17] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2777.0,644.0]
+[00:33:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:17] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2777.0,644.0 (min 0.0 blocks apart)
+[00:33:17] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2777.0,644.0
+[00:33:18] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:18] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2837.0,505.0]
+[00:33:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:18] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2837.0,505.0 (min 0.0 blocks apart)
+[00:33:18] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2837.0,505.0
+[00:33:18] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:18] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2639.0,564.0]
+[00:33:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:18] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2639.0,564.0 (min 0.0 blocks apart)
+[00:33:18] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2639.0,564.0
+[00:33:18] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:18] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2488.0,527.0]
+[00:33:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:18] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2488.0,527.0 (min 0.0 blocks apart)
+[00:33:18] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2488.0,527.0
+[00:33:18] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:18] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2397.0,910.0]
+[00:33:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:19] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2397.0,910.0 (min 0.0 blocks apart)
+[00:33:19] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2397.0,910.0
+[00:33:19] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:19] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2163.0,1300.0]
+[00:33:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[00:33:19] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2163.0,1300.0 (min 0.0 blocks apart)
+[00:33:19] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2163.0,1300.0
+[00:33:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:19] [Client thread/INFO]: [STDOUT]: Released 30
+[00:33:19] [Server thread/INFO]: [STDOUT]: Warning: managed 17/20 ticks this second.
+[00:33:19] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:19] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1790.0,1037.0]
+[00:33:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:19] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1790.0,1037.0 (min 0.0 blocks apart)
+[00:33:19] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1790.0,1037.0
+[00:33:19] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:19] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1801.0,1144.0]
+[00:33:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[00:33:20] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1801.0,1144.0 (min 0.0 blocks apart)
+[00:33:20] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1801.0,1144.0
+[00:33:20] [Client thread/INFO]: [STDOUT]: Released 17
+[00:33:20] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1519.0,1278.0]
+[00:33:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:20] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1519.0,1278.0 (min 0.0 blocks apart)
+[00:33:20] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1519.0,1278.0
+[00:33:20] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[00:33:20] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:20] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1783.0,1148.0]
+[00:33:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:20] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1783.0,1148.0 (min 0.0 blocks apart)
+[00:33:20] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1783.0,1148.0
+[00:33:21] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:21] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2024.0,1239.0]
+[00:33:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:21] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2024.0,1239.0 (min 0.0 blocks apart)
+[00:33:21] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2024.0,1239.0
+[00:33:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:21] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:21] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:21] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2238.0,930.0]
+[00:33:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:21] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2238.0,930.0 (min 0.0 blocks apart)
+[00:33:21] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2238.0,930.0
+[00:33:21] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[00:33:21] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:21] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2211.0,771.0]
+[00:33:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:21] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2211.0,771.0 (min 0.0 blocks apart)
+[00:33:21] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2211.0,771.0
+[00:33:22] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:22] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -2028.0,818.0]
+[00:33:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:22] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -2028.0,818.0 (min 0.0 blocks apart)
+[00:33:22] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -2028.0,818.0
+[00:33:22] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:22] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1665.0,1204.0]
+[00:33:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:22] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1665.0,1204.0 (min 0.0 blocks apart)
+[00:33:22] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1665.0,1204.0
+[00:33:22] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:33:22] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:23] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1474.0,1013.0]
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:23] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1474.0,1013.0 (min 0.0 blocks apart)
+[00:33:23] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1474.0,1013.0
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:23] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:23] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:23] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1545.0,1140.0]
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:23] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1545.0,1140.0 (min 0.0 blocks apart)
+[00:33:23] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1545.0,1140.0
+[00:33:23] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:23] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:23] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[00:33:23] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1505.0,1502.0]
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[00:33:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[00:33:23] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1505.0,1502.0 (min 0.0 blocks apart)
+[00:33:23] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1505.0,1502.0
+[00:33:24] [Client thread/INFO]: [STDOUT]: Released 31
+[00:33:24] [Client thread/INFO]: [STDOUT]: Released 32
+[00:33:24] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1505.0,1468.0]
+[00:33:24] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 400.0 blocks around -1505.0,1468.0 (min 0.0 blocks apart)
+[00:33:24] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1505.0,1468.0
+[00:33:24] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1313.0,1312.0]

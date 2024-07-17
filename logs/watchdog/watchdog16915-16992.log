@@ -1,0 +1,2 @@
+2024-07-15 16:18:13 Computinator watchdog[17167] INFO Watchdog started between parent 16915 and child 16992
+2024-07-15 16:18:49 Computinator watchdog[17167] INFO Parent is not running, hence we need terminate the child.

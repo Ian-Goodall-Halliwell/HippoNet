@@ -1,0 +1,3141 @@
+[02:45:21] [Sound Library Loader/INFO]: Sound engine started
+[02:45:21] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>Playthrough</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>true</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>true</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <DefaultWorldGenerator forceReset="false" seed="" generatorOptions="{}"/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>512</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+                <ObservationFromGrid>                      
+                <Grid name="voxels">                        
+                    <min x="-1" y="-1" z="-1"/>                        
+                    <max x="1" y="1" z="1"/>                      
+                </Grid>                  
+            </ObservationFromGrid>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        116a51f1-d15f-42aa-a18e-276742605bf9
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[02:45:21] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[02:45:22] [Client thread/INFO]: [STDOUT]: Mission received: Playthrough
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[02:45:22] [Client thread/INFO]: [STDOUT]: Starting command server.
+[02:45:22] [Thread-15/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10570
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[02:45:22] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[02:45:22] [Client thread/INFO]: [STDOUT]: [LOGTOPY] GENERATOR OPTIONS = {}
+[02:45:22] [Client thread/INFO]: Mixing MixinWorldProviderSpawn from mixins.overclocking.malmomod.json into net.minecraft.world.WorldProvider
+[02:45:22] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[02:45:22] [Server thread/INFO]: Generating keypair
+[02:45:22] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[02:45:22] [Server thread/INFO]: Applying holder lookups
+[02:45:22] [Server thread/INFO]: Holder lookups applied
+[02:45:22] [Server thread/INFO]: Loading dimension 0 (TEMP_0_e5f99948-4ce8-4227-ae03-93e3a44a32d0) (net.minecraft.server.integrated.IntegratedServer@22952cba)
+[02:45:22] [Server thread/INFO]: Loading dimension 1 (TEMP_0_e5f99948-4ce8-4227-ae03-93e3a44a32d0) (net.minecraft.server.integrated.IntegratedServer@22952cba)
+[02:45:22] [Server thread/INFO]: Loading dimension -1 (TEMP_0_e5f99948-4ce8-4227-ae03-93e3a44a32d0) (net.minecraft.server.integrated.IntegratedServer@22952cba)
+[02:45:22] [Server thread/INFO]: Preparing start region for level 0
+[02:45:23] [Server thread/INFO]: Preparing spawn area: 23%
+[02:45:24] [Server thread/INFO]: Preparing spawn area: 52%
+[02:45:25] [Server thread/INFO]: Preparing spawn area: 82%
+[02:45:26] [Server thread/INFO]: Changing view distance to 4, from 10
+[02:45:26] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[02:45:26] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[02:45:26] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[02:45:26] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[02:45:26] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[02:45:26] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[02:45:26] [Netty Server IO #1/INFO]: Client protocol version 2
+[02:45:26] [Netty Server IO #1/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[02:45:26] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[02:45:26] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[02:45:27] [Server thread/INFO]: [Server thread] Server side modded connection established
+[02:45:27] [Server thread/INFO]: MineDojoAgent0[local:E:b6ee0857] logged in with entity id 497 at (75.5, 81.0, 246.5)
+[02:45:27] [Server thread/INFO]: MineDojoAgent0 joined the game
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[02:45:27] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[02:45:27] [Server thread/INFO]: [STDOUT]: Mission received: Playthrough
+[02:45:27] [Server thread/INFO]: Received mission: §9Playthrough
+[02:45:27] [Server thread/INFO]: Source: §alocalhost
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[02:45:27] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[02:45:27] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[02:45:27] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[02:45:27] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[02:45:27] [Client thread/INFO]: Mixing MixinRandomSkinTexture from mixins.overclocking.malmomod.json into net.minecraft.client.resources.DefaultPlayerSkin
+[02:45:27] [Client thread/INFO]: [CHAT] Received mission: §9Playthrough
+[02:45:27] [Client thread/INFO]: [CHAT] Source: §alocalhost
+[02:45:27] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[02:45:27] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[02:45:27] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[02:45:27] [Client thread/INFO]: [STDOUT]: [LOGTOPY] On Mac OSX Catalina make sure to install this OpenJDK 1.8.0_152-release-1056-b12, this prevents the NSDragRegions crash
+[02:45:27] [Client thread/INFO]: [STDOUT]: Resized the window
+[02:45:27] [Client thread/INFO]: [STDOUT]: Unpausing
+[02:45:30] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:30] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around 75.0,246.0]
+[02:45:30] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around 75.0,246.0 (min 0.0 blocks apart)
+[02:45:30] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around 75.0,246.0
+[02:45:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:31] [Server thread/INFO]: [STDOUT]: Warning: managed 7/20 ticks this second.
+[02:45:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:32] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:33] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:45:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:34] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:45:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:35] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:36] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:45:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:37] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:37] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:45:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:38] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:38] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:38] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:45:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:39] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:39] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:45:39] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:40] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:40] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:40] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:40] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:40] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:40] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:40] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:40] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:40] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:45:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:41] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:42] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:42] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:43] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:43] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:44] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:45:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:44] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:45] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:45] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:45] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:45] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:46] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:46] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:47] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:47] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:48] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:45:48] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:49] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:45:49] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:49] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:49] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:50] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:51] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:51] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:51] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:51] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:51] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:52] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:52] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:52] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:52] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:53] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:53] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:53] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:53] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:45:53] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:54] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:54] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:54] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:54] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:55] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:55] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:55] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:45:55] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:55] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:56] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:56] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:56] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:57] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:57] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:57] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:57] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:57] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:58] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 17
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 30
+[02:45:59] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:45:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:45:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:00] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:01] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:02] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:03] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:03] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:03] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:04] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:04] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:06] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:07] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:08] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:08] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:08] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:09] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:09] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:09] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:10] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:10] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:11] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:11] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:11] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:12] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:12] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:12] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:12] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:13] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:13] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:13] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:14] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:15] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:15] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:16] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:16] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:16] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:17] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:17] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:17] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:18] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:18] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:19] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:19] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:19] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:20] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:21] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:21] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:21] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:22] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:23] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:23] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:23] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:23] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:23] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:24] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:24] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:24] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:24] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:24] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:24] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:24] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:25] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:25] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:25] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:26] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:26] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:26] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:26] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:27] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:29] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:29] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:29] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:30] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:30] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:30] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:30] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:30] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:30] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:31] [Server thread/INFO]: [STDOUT]: Warning: managed 9/20 ticks this second.
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:32] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:33] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:34] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:35] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:35] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:35] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:36] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:36] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:37] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:38] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:38] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:38] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:38] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:39] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:40] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:40] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:40] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:40] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:41] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:42] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:42] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:42] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:42] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:43] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:43] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:44] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:45] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:45] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:45] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:46] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:47] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:47] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:46:47] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:47] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:47] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:48] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:49] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:49] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:49] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:49] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:50] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:50] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:51] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:51] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:52] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:53] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:53] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:54] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:54] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:54] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:54] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:54] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:54] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:55] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -638.0,-104.0]
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:55] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around -638.0,-104.0 (min 0.0 blocks apart)
+[02:46:55] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -638.0,-104.0
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:55] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:55] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:55] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:56] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:56] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:56] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:46:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:57] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:57] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:57] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:57] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:57] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:46:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:58] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:58] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:58] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:58] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:58] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 17
+[02:46:59] [Client thread/INFO]: [STDOUT]: Released 30
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:46:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:46:59] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:00] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:01] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:02] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:03] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:03] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:03] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:03] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:03] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:04] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:04] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:05] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:05] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:06] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:06] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:07] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:08] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:09] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:09] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:10] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:10] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:10] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:11] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:12] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:12] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:13] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:14] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:14] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:15] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:15] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:16] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:16] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:17] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:17] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:17] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:18] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:18] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:19] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:19] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:20] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:20] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:20] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:21] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:21] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:21] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:21] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:22] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:23] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:24] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:24] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:24] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:24] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:24] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:25] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:26] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:26] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:27] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:28] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:29] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:29] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:30] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:30] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:30] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:30] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:30] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:30] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:31] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:32] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:33] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:34] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:34] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:35] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:35] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:36] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:36] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:36] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:37] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:38] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:38] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:39] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:39] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:39] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:40] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:40] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:41] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:41] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:42] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:43] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:44] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:45] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:45] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:46] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:47] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:47] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[02:47:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:48] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:48] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:49] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:50] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:50] [Server thread/INFO]: [STDOUT]: Warning: managed 16/20 ticks this second.
+[02:47:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:50] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:50] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:51] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:51] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:52] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:52] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:47:52] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:52] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:52] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:53] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:53] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:53] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:53] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:53] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:54] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:54] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:54] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:54] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:54] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:54] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:54] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:54] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:54] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:55] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:55] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:55] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:55] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:55] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:55] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:55] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:56] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:56] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:47:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:56] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:56] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:57] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:57] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:57] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:57] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:57] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:58] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:58] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:47:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:59] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 17
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:47:59] [Client thread/INFO]: [STDOUT]: Released 30
+[02:47:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:00] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:01] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:02] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:02] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:03] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:03] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:04] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:04] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:05] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:05] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:06] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:06] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:06] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:07] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:07] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:07] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:08] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:09] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:10] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -556.0,891.0]
+[02:48:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:10] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around -556.0,891.0 (min 0.0 blocks apart)
+[02:48:10] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -556.0,891.0
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:10] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:10] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:10] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:11] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:12] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:12] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:13] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:13] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:13] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:13] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:13] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:14] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:14] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:15] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:16] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:16] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:16] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:16] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:16] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:17] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:18] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:18] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:19] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:19] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:20] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:20] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:20] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:20] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:20] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:21] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:21] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:22] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:48:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:23] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:23] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:23] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:23] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:23] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:24] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:24] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:24] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:24] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:24] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:24] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:25] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:25] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:25] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:26] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:26] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:48:26] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:27] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:28] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:48:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:29] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:29] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:29] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:29] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:29] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:29] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:29] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:29] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:30] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:30] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:30] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:31] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:32] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:33] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:48:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:34] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:35] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:35] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:36] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:36] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:37] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:37] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:37] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:37] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:38] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:38] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:38] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:48:38] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:38] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:38] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:38] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:39] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:39] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:39] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:39] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:39] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:40] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:40] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:40] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:40] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:40] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:40] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:40] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:40] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:41] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:41] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:41] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:48:42] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:42] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:42] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:42] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:42] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:42] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:42] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:43] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:43] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:43] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:44] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:44] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:44] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:44] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:44] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:44] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:44] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:45] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:45] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:45] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:45] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:45] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:45] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:45] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:45] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:45] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:45] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:46] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:46] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:46] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:46] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:46] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:46] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:47] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:47] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:47] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:47] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:47] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:47] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:47] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:47] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:47] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:48] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:48] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:48] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:48] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:48] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:48] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:49] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:49] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:49] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:49] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:49] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:50] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:48:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:50] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:50] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:50] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:50] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:50] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:50] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:50] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:51] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:51] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:51] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:51] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:51] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:51] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:52] [Server thread/INFO]: [STDOUT]: Warning: managed 9/20 ticks this second.
+[02:48:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:52] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:52] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:52] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:52] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:52] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:52] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:52] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:53] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:53] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:53] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:53] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:53] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:53] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:54] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:54] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:54] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:48:54] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:54] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:54] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:55] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:55] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:55] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:55] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:55] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:55] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:55] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:56] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:56] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:56] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:57] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:57] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:57] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:57] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:57] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:57] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:57] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:58] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:48:58] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 30
+[02:48:58] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:58] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:58] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:59] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:48:59] [Client thread/INFO]: [STDOUT]: Released 31
+[02:48:59] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:48:59] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:48:59] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:48:59] [Client thread/INFO]: [STDOUT]: Released 32
+[02:48:59] [Client thread/INFO]: [STDOUT]: Released 17
+[02:48:59] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:00] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:00] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:00] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:01] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:01] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:01] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:02] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:02] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:02] [Server thread/INFO]: [STDOUT]: Warning: managed 15/20 ticks this second.
+[02:49:03] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:03] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:03] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:03] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:03] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:03] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:03] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:03] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:03] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:04] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:04] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:04] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:04] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:04] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:05] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:05] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:05] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:05] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:05] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:05] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:06] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:06] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:06] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:07] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:07] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:07] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:08] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:08] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:08] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:09] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:09] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:09] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:10] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:10] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:10] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:10] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:10] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:10] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:11] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:11] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:11] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:11] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:11] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:11] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:11] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:12] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:12] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:12] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:12] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:49:12] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:12] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:12] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:13] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:13] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:13] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:13] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:13] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:14] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:14] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:14] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:14] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:14] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:14] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:14] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:14] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:15] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:15] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:15] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:15] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:15] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:15] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:15] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:15] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:15] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:16] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:16] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:16] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:16] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:16] [Server thread/INFO]: [STDOUT]: Warning: managed 9/20 ticks this second.
+[02:49:16] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:17] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:17] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:17] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:18] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:18] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:18] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:18] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:18] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:18] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:18] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:18] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:19] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:19] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:19] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:19] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:19] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:19] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:19] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:19] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:20] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:20] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:20] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:20] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:20] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:21] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:21] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:21] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:21] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:21] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:21] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:21] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:22] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:22] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:22] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:23] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:23] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:23] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:23] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:23] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:23] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:23] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:23] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:24] [Server thread/INFO]: [STDOUT]: Warning: managed 9/20 ticks this second.
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:24] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:24] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:25] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:25] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:25] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:25] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:25] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:49:25] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:25] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:25] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:25] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:25] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:26] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:26] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:26] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:26] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:26] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:26] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:26] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:26] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:27] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:27] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:27] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:27] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:27] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:27] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:27] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:27] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:27] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:28] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:28] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:28] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:28] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:28] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:28] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:29] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:29] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:29] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:29] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:29] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:29] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:29] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:30] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:30] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:30] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:30] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:30] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:30] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:30] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:49:30] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:30] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:31] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:31] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:31] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:32] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:32] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:33] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:33] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:33] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:34] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:34] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:34] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:35] [Server thread/INFO]: [STDOUT]: Warning: managed 10/20 ticks this second.
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 32
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:35] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:35] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:36] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:49:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:36] [Client thread/INFO]: [STDOUT]: Released 17
+[02:49:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:36] [Server thread/INFO]: [STDOUT]: Warning: managed 13/20 ticks this second.
+[02:49:36] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:36] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:36] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -1256.0,1525.0]
+[02:49:36] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:49:36] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around -1256.0,1525.0 (min 0.0 blocks apart)
+[02:49:36] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -1256.0,1525.0
+[02:49:36] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:37] [Client thread/INFO]: [STDOUT]: Released 31
+[02:49:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:37] [Server thread/INFO]: MineDojoAgent0 suffocated in a wall
+[02:49:37] [Client thread/INFO]: [CHAT] MineDojoAgent0 suffocated in a wall
+[02:49:37] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:49:37] [Client thread/INFO]: [STDOUT]: FakeKeyboard - getEventChar is called 
+[02:49:37] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:49:37] [Client thread/INFO]: [STDOUT]: Released 30
+[02:49:37] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:49:38] [Server thread/INFO]: [STDOUT]: Warning: managed 3/20 ticks this second.

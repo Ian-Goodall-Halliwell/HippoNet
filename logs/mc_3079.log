@@ -1,66 +1,261 @@
-[22:17:02] [Thread-4/INFO]: [STDOUT]: SERVER enter state: DORMANT
-[22:17:02] [EnvServerSocketHandler/INFO]: Received Mission token b6635cdc-8a66-458a-877e-8d5ca442f892:0:0:1:true
-[22:17:02] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>b6635cdc-8a66-458a-877e-8d5ca442f892</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
-[22:17:02] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
-[22:17:02] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
-[22:17:02] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
-[22:17:02] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
-[22:17:02] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: 4518745661589638345
-[22:17:03] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:17:03] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:03] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:03] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:17:03] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:03] [Render thread/INFO]: Reloading ResourceManager: Default
-[22:17:03] [Render thread/INFO]: Loaded 7 recipes
-[22:17:03] [Render thread/INFO]: Loaded 927 advancements
-[22:17:03] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:17:03] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
-[22:17:03] [Render thread/INFO]: Generating keypair
-[22:17:05] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:17:09] [Render thread/INFO]: Changing view distance to 11, from 10
-[22:17:09] [Render thread/INFO]: MineRLAgent0[local:E:1d3884f3] logged in with entity id 163 at (-173.5, 67.0, 778.5)
-[22:17:09] [Render thread/INFO]: MineRLAgent0 joined the game
-[22:17:09] [Render thread/INFO]: Preparing spawn area: 0%
-[22:17:09] [Render thread/INFO]: Time elapsed: 2 ms
-[22:17:09] [Render thread/INFO]: [STDOUT]: *** creating fake mouse cursor ***
-[22:17:09] [Render thread/INFO]: [STDOUT]: Starting new video null
-[22:17:09] [Render thread/INFO]: Saving and pausing game...
-[22:17:09] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldd15c84a3675f]'/minecraft:overworld
-[22:17:10] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldd15c84a3675f]'/minecraft:the_nether
-[22:17:10] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldd15c84a3675f]'/minecraft:the_end
-[22:17:10] [Render thread/INFO]: Loaded 0 advancements
-[22:17:12] [EnvServerSocketHandler/INFO]: [STDOUT]: *** Stopping the replay, returning control to the inputs
-[22:17:12] [EnvServerSocketHandler/INFO]: Received Mission token 6a3c14ff-af38-4dcf-bc08-e9f081aee27c:0:0:1:true
-[22:17:12] [EnvServerSocketHandler/INFO]: Received mission init command  <MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0"><Mission><About><Summary>MineRLBasaltFindCave-v0</Summary></About><ModSettings><MsPerTick>50</MsPerTick></ModSettings><ServerSection><ServerInitialConditions><Time><AllowPassageOfTime>false</AllowPassageOfTime></Time><AllowSpawning>true</AllowSpawning></ServerInitialConditions><ServerHandlers><DefaultWorldGenerator forceReset="true" generatorOptions="{}"/><ServerQuitFromTimeUp timeLimitMs="180000" description="out_of_time"/><ServerQuitWhenAnyAgentFinishes/></ServerHandlers></ServerSection><AgentSection mode="Survival"><Name>MineRLAgent0</Name><AgentStart><LowLevelInputs>true</LowLevelInputs><GuiScale>1.0</GuiScale><GammaSetting>2.0</GammaSetting><FOVSetting>70.0</FOVSetting><FakeCursorSize>16</FakeCursorSize><Inventory/><PreferredSpawnBiome>plains</PreferredSpawnBiome><DoneOnDeath>true</DoneOnDeath></AgentStart><AgentHandlers><FileBasedPerformanceProducer/><PauseCommand/><VideoProducer want_depth="false"><Width>640</Width><Height>360</Height></VideoProducer><HumanLevelCommands/><CameraCommands/></AgentHandlers></AgentSection></Mission><ExperimentUID>6a3c14ff-af38-4dcf-bc08-e9f081aee27c</ExperimentUID><ClientRole>0</ClientRole><ClientAgentConnection><ClientIPAddress>127.0.0.1</ClientIPAddress><ClientMissionControlPort>0</ClientMissionControlPort><ClientCommandsPort>0</ClientCommandsPort><AgentIPAddress>127.0.0.1</AgentIPAddress><AgentMissionControlPort>0</AgentMissionControlPort><AgentVideoPort>0</AgentVideoPort><AgentDepthPort>0</AgentDepthPort><AgentLuminancePort>0</AgentLuminancePort><AgentObservationsPort>0</AgentObservationsPort><AgentRewardsPort>0</AgentRewardsPort><AgentColourMapPort>0</AgentColourMapPort></ClientAgentConnection></MissionInit>
-[22:17:13] [EnvServerSocketHandler/INFO]: [STDOUT]: Setting width, height to 640, 360
-[22:17:13] [EnvServerSocketHandler/INFO]: [STDOUT]: Gamma: 2.0
-[22:17:13] [EnvServerSocketHandler/INFO]: [STDOUT]: FOV: 70.0
-[22:17:13] [EnvServerSocketHandler/INFO]: [STDOUT]: GuiScale: 1.0
-[22:17:13] [Render thread/INFO]: [STDOUT]: Seed not provided, generating random one: -8597645198906969706
-[22:17:13] [Render thread/WARN]: Ambiguity between arguments [teleport, destination] and [teleport, targets] with inputs: [Player, 0123, @e, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:17:13] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:13] [Render thread/WARN]: Ambiguity between arguments [teleport, location] and [teleport, targets] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:13] [Render thread/WARN]: Ambiguity between arguments [teleport, targets] and [teleport, destination] with inputs: [Player, 0123, dd12be42-52a9-4a91-a8a1-11c01849e498]
-[22:17:13] [Render thread/WARN]: Ambiguity between arguments [teleport, targets, location] and [teleport, targets, destination] with inputs: [0.1 -0.5 .9, 0 0 0]
-[22:17:13] [Render thread/INFO]: Reloading ResourceManager: Default
-[22:17:13] [Render thread/INFO]: Loaded 7 recipes
-[22:17:13] [Render thread/INFO]: Loaded 927 advancements
-[22:17:13] [Render thread/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
-[22:17:13] [Render thread/INFO]: Starting integrated minecraft server version 1.16.5
-[22:17:13] [Render thread/INFO]: Generating keypair
-[22:17:14] [Render thread/INFO]: Preparing start region for dimension minecraft:overworld
-[22:17:19] [Render thread/INFO]: Changing view distance to 11, from 10
-[22:17:19] [Render thread/INFO]: MineRLAgent0[local:E:cc2d51a2] logged in with entity id 532 at (162.5, 65.0, -549.5)
-[22:17:19] [Render thread/INFO]: MineRLAgent0 joined the game
-[22:17:19] [Render thread/INFO]: Preparing spawn area: 45%
-[22:17:19] [Render thread/INFO]: Time elapsed: 1 ms
-[22:17:19] [Render thread/INFO]: [STDOUT]: Starting new video null
-[22:17:19] [Render thread/INFO]: Saving and pausing game...
-[22:17:19] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldc428c27c2881]'/minecraft:overworld
-[22:17:19] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldc428c27c2881]'/minecraft:the_nether
-[22:17:19] [Render thread/INFO]: Saving chunks for level 'ServerLevel[mcpworldc428c27c2881]'/minecraft:the_end
-[22:17:20] [Render thread/INFO]: Loaded 0 advancements
-[22:17:32] [Render thread/INFO]: MineRLAgent0 fell from a high place
-[22:17:32] [Render thread/INFO]: [CHAT] MineRLAgent0 fell from a high place
-[22:17:32] [Render thread/INFO]: [STDOUT]: Starting new video null
+[02:10:28] [EnvServerSocketHandler/INFO]: [STDOUT]: Received from localhost:<MissionInit xmlns="http://ProjectMalmo.microsoft.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" SchemaVersion="" PlatformVersion="0.37.0">
+    <Mission xmlns="http://ProjectMalmo.microsoft.com">
+        <About>
+            <Summary>Playthrough</Summary>
+        </About>
+
+        <ModSettings>
+            <MsPerTick>50</MsPerTick>
+        </ModSettings>
+
+        <ServerSection>
+            <ServerInitialConditions>
+                <!-- Initial Conditions -->
+
+                
+                <Time>
+                   
+                   <AllowPassageOfTime>true</AllowPassageOfTime>
+                </Time>
+
+                
+                <AllowSpawning>true</AllowSpawning>
+
+                
+
+            </ServerInitialConditions>
+            <ServerHandlers>
+
+                
+                <DefaultWorldGenerator forceReset="false" seed="" generatorOptions="{}"/>
+
+                
+
+                
+
+                
+
+
+            </ServerHandlers>
+        </ServerSection>
+
+
+        
+        <AgentSection mode="Survival">
+            <Name>MineDojoAgent0</Name>
+
+            <AgentStart>
+
+                
+                <LowLevelInputs>true</LowLevelInputs>
+
+                
+                <BreakSpeedMultiplier>1.0</BreakSpeedMultiplier>
+
+                
+                <StartingHealth maxHealth="20" health="20.0"/>
+
+                
+                <StartingFood food="20"/>
+
+                
+
+            </AgentStart>
+            <AgentHandlers>
+                <!-- These area  bit of boilerplate that
+                 we always expect to be included ... -->
+                <FileBasedPerformanceProducer/>
+                <ObservationFromDamage/>
+                <PauseCommand/>
+
+                <!--  Observations     -->
+
+                
+                <VideoProducer want_depth="false">
+                <Width>512 </Width>
+                <Height>512</Height>
+            </VideoProducer>
+
+                
+                <ObservationFromFullInventory flat="false"/>
+
+                
+                <ObservationFromFullStats/>
+
+                
+                <ObservationFromGrid>                      
+                <Grid name="voxels">                        
+                    <min x="-1" y="-1" z="-1"/>                        
+                    <max x="1" y="1" z="1"/>                      
+                </Grid>                  
+            </ObservationFromGrid>
+
+                
+
+                <!--  Monitors     -->
+
+                <!--  Actions   -->
+                <ChatCommands/>
+
+                
+                <CameraCommands/>
+
+                
+                <NearbySmeltCommands/>
+
+                
+                <SimpleCraftCommands/>
+
+                
+                <NearbyCraftCommands/>
+
+                
+                <HumanLevelCommands/>
+
+                
+                <EquipCommands/>
+
+                
+                <PlaceCommands/>
+
+                
+
+                <!--  Rewards   -->
+
+                <!-- Additional Agent Handlers like quitting -->
+                
+
+                <!-- Env Monitors? -->
+            </AgentHandlers>
+        </AgentSection>
+        
+    </Mission>
+    <ExperimentUID>
+        5a0d731f-ada9-448f-a6e5-81b42ad9b826
+    </ExperimentUID>
+    <ClientRole>
+        0
+    </ClientRole>
+    <ClientAgentConnection>
+        <ClientIPAddress>127.0.0.1</ClientIPAddress>
+        <ClientMissionControlPort>0</ClientMissionControlPort>
+        <ClientCommandsPort>0</ClientCommandsPort>
+        <AgentIPAddress>127.0.0.1</AgentIPAddress>
+        <AgentMissionControlPort>0</AgentMissionControlPort>
+        <AgentVideoPort>0</AgentVideoPort>
+        <AgentDepthPort>0</AgentDepthPort>
+        <AgentLuminancePort>0</AgentLuminancePort>
+        <AgentObservationsPort>0</AgentObservationsPort>
+        <AgentRewardsPort>0</AgentRewardsPort>
+        <AgentColourMapPort>0</AgentColourMapPort>
+    </ClientAgentConnection>
+</MissionInit>
+[02:10:28] [Realms Notification Availability checker #1/INFO]: Could not authorize you against Realms server: Invalid session id
+[02:10:28] [EnvServerSocketHandler/INFO]: [STDOUT]: REPLYING WITH: MALMOOK
+[02:10:28] [Client thread/INFO]: [STDOUT]: Mission received: Playthrough
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_HANDLERS
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_HANDLERS
+[02:10:28] [Client thread/INFO]: [STDOUT]: Starting command server.
+[02:10:28] [Thread-10/INFO]: [STDOUT]: INFO: ->com(0) Listening for messages on port 10955
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT request state: EVALUATING_WORLD_REQUIREMENTS
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT enter state: EVALUATING_WORLD_REQUIREMENTS
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT request state: CREATING_NEW_WORLD
+[02:10:28] [Client thread/INFO]: [STDOUT]: CLIENT enter state: CREATING_NEW_WORLD
+[02:10:28] [Client thread/INFO]: [STDOUT]: [LOGTOPY] GENERATOR OPTIONS = {}
+[02:10:29] [Client thread/INFO]: Mixing MixinWorldProviderSpawn from mixins.overclocking.malmomod.json into net.minecraft.world.WorldProvider
+[02:10:29] [Server thread/INFO]: Starting integrated minecraft server version 1.11.2
+[02:10:29] [Server thread/INFO]: Generating keypair
+[02:10:29] [Server thread/INFO]: Injecting existing block and item data into this server instance
+[02:10:29] [Server thread/INFO]: Applying holder lookups
+[02:10:29] [Server thread/INFO]: Holder lookups applied
+[02:10:29] [Server thread/INFO]: Loading dimension 0 (TEMP_0_eee622df-5250-4225-9e14-ffde3ca5eef6) (net.minecraft.server.integrated.IntegratedServer@49f89a30)
+[02:10:29] [Server thread/INFO]: Loading dimension 1 (TEMP_0_eee622df-5250-4225-9e14-ffde3ca5eef6) (net.minecraft.server.integrated.IntegratedServer@49f89a30)
+[02:10:29] [Server thread/INFO]: Loading dimension -1 (TEMP_0_eee622df-5250-4225-9e14-ffde3ca5eef6) (net.minecraft.server.integrated.IntegratedServer@49f89a30)
+[02:10:29] [Server thread/INFO]: Preparing start region for level 0
+[02:10:30] [Server thread/INFO]: Preparing spawn area: 24%
+[02:10:31] [Server thread/INFO]: Preparing spawn area: 52%
+[02:10:32] [Server thread/INFO]: Preparing spawn area: 72%
+[02:10:33] [Server thread/INFO]: Preparing spawn area: 91%
+[02:10:33] [Server thread/INFO]: Changing view distance to 4, from 10
+[02:10:34] [Netty Local Client IO #0/INFO]: [STDOUT]: Transformed Name: net.minecraft.client.entity.EntityOtherPlayerMP
+[02:10:34] [Netty Local Client IO #0/INFO]: [STDOUT]: MALMO: Found EntityOtherPlayerMP, attempting to transform it
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_MOD_READY
+[02:10:34] [Server thread/INFO]: [STDOUT]: CLIENT request state: WAITING_FOR_SERVER_READY
+[02:10:34] [Netty Local Client IO #0/INFO]: Server protocol version 2
+[02:10:34] [Netty Server IO #1/INFO]: Client protocol version 2
+[02:10:34] [Netty Server IO #1/INFO]: Client attempting to join with 5 mods : minecraft@1.11.2,FML@8.0.99.99,malmomod@0.37.0,forge@13.20.1.2588,mcp@9.19
+[02:10:34] [Netty Local Client IO #0/INFO]: [Netty Local Client IO #0] Client side modded connection established
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_MOD_READY
+[02:10:34] [Client thread/INFO]: [STDOUT]: CLIENT enter state: WAITING_FOR_SERVER_READY
+[02:10:34] [Server thread/INFO]: [Server thread] Server side modded connection established
+[02:10:34] [Server thread/INFO]: MineDojoAgent0[local:E:e74e28b4] logged in with entity id 577 at (-38.5, 69.0, 247.5)
+[02:10:34] [Server thread/INFO]: MineDojoAgent0 joined the game
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER request state: DORMANT
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER enter state: DORMANT
+[02:10:34] [Server thread/INFO]: [STDOUT]: INCOMING MISSION: Received MissionInit directly through ServerStateMachine constructor.
+[02:10:34] [Server thread/INFO]: [STDOUT]: Mission received: Playthrough
+[02:10:34] [Server thread/INFO]: Received mission: §9Playthrough
+[02:10:34] [Server thread/INFO]: Source: §alocalhost
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER request state: BUILDING_WORLD
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER enter state: BUILDING_WORLD
+[02:10:34] [Server thread/INFO]: [STDOUT]: SERVER request state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[02:10:35] [Client thread/INFO]: [CHAT] Received mission: §9Playthrough
+[02:10:35] [Client thread/INFO]: [CHAT] Source: §alocalhost
+[02:10:35] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[02:10:35] [Client thread/INFO]: Mixing MixinRandomSkinTexture from mixins.overclocking.malmomod.json into net.minecraft.client.resources.DefaultPlayerSkin
+[02:10:35] [Server thread/INFO]: [STDOUT]: SERVER enter state: WAITING_FOR_AGENTS_TO_ASSEMBLE
+[02:10:35] [Server thread/INFO]: [STDOUT]: Experiment requires: 
+[02:10:35] [Server thread/INFO]: [STDOUT]: >>>> MineDojoAgent0
+[02:10:35] [Client thread/INFO]: [STDOUT]: ***Telling server we are ready - MineDojoAgent0
+[02:10:35] [Server thread/INFO]: [STDOUT]: Initializing player with username MineDojoAgent0 and agentname MineDojoAgent0
+[02:10:35] [Client thread/INFO]: [STDOUT]: CLIENT request state: RUNNING
+[02:10:35] [Client thread/INFO]: [STDOUT]: CLIENT enter state: RUNNING
+[02:10:35] [Server thread/INFO]: [STDOUT]: SERVER request state: RUNNING
+[02:10:35] [Server thread/INFO]: [STDOUT]: SERVER enter state: RUNNING
+[02:10:35] [Client thread/INFO]: [STDOUT]: [LOGTOPY] On Mac OSX Catalina make sure to install this OpenJDK 1.8.0_152-release-1056-b12, this prevents the NSDragRegions crash
+[02:10:35] [Client thread/INFO]: [STDOUT]: Resized the window
+[02:10:35] [Client thread/INFO]: [STDOUT]: Unpausing
+[02:10:38] [Server thread/INFO]: [STDOUT]: Warning: managed 12/20 ticks this second.
+[02:10:38] [Server thread/INFO]: [MineDojoAgent0: Successfully spread 1 player(s) around -39.0,247.0]
+[02:10:38] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:10:38] [Client thread/INFO]: [STDOUT]: Pressed 32
+[02:10:38] [Client thread/INFO]: [CHAT] Spreading 1 player(s) 1000.0 blocks around -39.0,247.0 (min 0.0 blocks apart)
+[02:10:38] [Client thread/INFO]: [CHAT] Successfully spread 1 player(s) around -39.0,247.0
+[02:10:39] [Server thread/INFO]: [STDOUT]: Warning: managed 11/20 ticks this second.
+[02:10:39] [Client thread/INFO]: [STDOUT]: Pressed 17
+[02:10:39] [Client thread/INFO]: [STDOUT]: Released 31
+[02:10:43] [Server thread/INFO]: [STDOUT]: Warning: managed 14/20 ticks this second.
+[02:10:43] [Client thread/INFO]: [STDOUT]: Released 17
+[02:10:43] [Client thread/INFO]: [STDOUT]: Pressed 30
+[02:10:43] [Client thread/INFO]: [STDOUT]: Released 32
+[02:10:48] [Server thread/INFO]: [STDOUT]: Warning: managed 19/20 ticks this second.
+[02:10:48] [Client thread/INFO]: [STDOUT]: Pressed 31
+[02:10:53] [Server thread/INFO]: [STDOUT]: Warning: managed 1/20 ticks this second.
+[02:10:54] [Client thread/INFO]: [STDOUT]: Released 30
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib pcm.c:2664:(snd_pcm_open_noupdate) Unknown PCM default
+AL lib: (EE) alsa_open_playback: Could not open playback device 'default': No such file or directory
+[02:10:56] [Thread-6/ERROR]: The jar file /home/ian/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4-nightly-20150209/697517568c68e78ae0b4544145af031c81082dfe/lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[02:10:56] [Thread-6/ERROR]: The jar file /home/ian/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4-nightly-20150209/697517568c68e78ae0b4544145af031c81082dfe/lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[02:10:56] [Thread-6/ERROR]: The jar file /home/ian/.gradle/caches/modules-2/files-2.1/org.lwjgl.lwjgl/lwjgl/2.9.4-nightly-20150209/697517568c68e78ae0b4544145af031c81082dfe/lwjgl-2.9.4-nightly-20150209.jar has a security seal for path org.lwjgl.openal, but that path is defined and not secure
+[02:10:56] [Thread-6/ERROR]: Error in class 'LibraryLWJGLOpenAL'
+[02:10:56] [Thread-6/ERROR]: Unable to initialize OpenAL.  Probable cause: OpenAL not supported.
+[02:10:56] [Thread-6/WARN]: ERROR MESSAGE:
+[02:10:56] [Thread-6/INFO]: Could not locate OpenAL library.
+[02:10:56] [Thread-6/WARN]: STACK TRACE:
+[02:10:56] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:156)
+[02:10:56] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:102)
+[02:10:56] [Thread-6/INFO]: org.lwjgl.openal.AL.create(AL.java:206)
+[02:10:56] [Thread-6/INFO]: paulscode.sound.libraries.LibraryLWJGLOpenAL.init(LibraryLWJGLOpenAL.java:164)
+[02:10:56] [Thread-6/INFO]: paulscode.sound.SoundSystem.CommandNewLibrary(SoundSystem.java:1576)
+[02:10:56] [Thread-6/INFO]: paulscode.sound.SoundSystem.CommandQueue(SoundSystem.java:2572)
+[02:10:56] [Thread-6/INFO]: paulscode.sound.CommandThread.run(CommandThread.java:121)
+[02:10:56] [Thread-8/INFO]: Initializing LWJGL OpenAL
+[02:10:56] [Thread-8/INFO]: (The LWJGL binding of OpenAL.  For more information, see http://www.lwjgl.org)
+[02:11:00] [Server thread/INFO]: [STDOUT]: Warning: managed 6/20 ticks this second.

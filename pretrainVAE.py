@@ -2,6 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
+
 class VAE(nn.Module):
     def __init__(self, in_channels: int, latent_dim: int, hidden_dims=None) -> None:
         super(VAE, self).__init__()
@@ -10,7 +11,6 @@ class VAE(nn.Module):
 
         if hidden_dims is None:
             hidden_dims = [32, 64, 128, 256, 512]
-            # hidden_dims = [32, 64, 128, 256]
 
         # Encoder
         modules = []
@@ -25,14 +25,14 @@ class VAE(nn.Module):
 
         self.encoder = nn.Sequential(*modules)
 
-        # Adjust the size of the linear layers to match the output of your encoder
-        self.fc_mu = nn.Linear(hidden_dims[-1]*240, latent_dim)  # Adjusted for the new flattened size
-        self.fc_var = nn.Linear(hidden_dims[-1]*240, latent_dim)  # Adjusted for the new flattened size
+        # Adjusted for the new flattened size after encoder
+        self.fc_mu = nn.Linear(hidden_dims[-1]*16*16, latent_dim)
+        self.fc_var = nn.Linear(hidden_dims[-1]*16*16, latent_dim)
 
         # Decoder
         modules = []
         self.decoder_input = nn.Sequential(
-            nn.Linear(latent_dim, hidden_dims[-1]*240),
+            nn.Linear(latent_dim, hidden_dims[-1]*16*16),
             nn.LeakyReLU())
 
         hidden_dims.reverse()
@@ -60,6 +60,7 @@ class VAE(nn.Module):
                                                output_padding=1),
                             nn.BatchNorm2d(hidden_dims[-1]),
                             nn.LeakyReLU(),
+                            # Adjust the output channels to match the input image depth
                             nn.Conv2d(hidden_dims[-1], out_channels=3,
                                       kernel_size=3, padding=1),
                             nn.Sigmoid())
@@ -73,7 +74,8 @@ class VAE(nn.Module):
 
     def decode(self, z):
         result = self.decoder_input(z)
-        result = result.view(-1, 512, 12, 20)  # -1 is used to automatically infer the batch size
+        # Adjusted reshaping dimensions to match the decoder's expected input
+        result = result.view(-1, 512, 16, 16)
 
         result = self.decoder(result)
         result = self.final_layer(result)

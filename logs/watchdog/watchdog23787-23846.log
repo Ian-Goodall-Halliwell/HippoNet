@@ -1,0 +1,8 @@
+2024-07-15 16:29:06 Computinator watchdog[24007] INFO Watchdog started between parent 23787 and child 23846
+2024-07-15 16:29:49 Computinator watchdog[24007] INFO Parent is not running, hence we need terminate the child.
+2024-07-15 16:29:49 Computinator watchdog[24007] INFO About to reap process tree of 23846:launchClient.sh:/usr/bin/bash i sleeping, owner 1676, printing process tree status in termination order:
+2024-07-15 16:29:49 Computinator watchdog[24007] INFO 	-23851:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 23846
+2024-07-15 16:29:49 Computinator watchdog[24007] INFO 	-23846:launchClient.sh:/usr/bin/bash i sleeping, owner 1676
+2024-07-15 16:29:49 Computinator watchdog[24007] INFO Trying to SIGTERM 23851:java:/usr/lib/jvm/java-8-openjdk-amd64/jre/bin/java i sleeping, owner 23846
+2024-07-15 16:29:50 Computinator watchdog[24007] INFO Process psutil.Process(pid=23851, name='java', status='terminated', started='16:29:03') terminated with exit code None
+2024-07-15 16:29:50 Computinator watchdog[24007] INFO Process psutil.Process(pid=23846, name='launchClient.sh', status='terminated', started='16:29:03') does not exist or is zombie.

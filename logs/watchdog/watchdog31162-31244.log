@@ -1,0 +1,2 @@
+2024-07-15 17:12:01 Computinator watchdog[31415] INFO Watchdog started between parent 31162 and child 31244
+2024-07-15 17:13:02 Computinator watchdog[31415] INFO Child is not running anymore, launcher can terminate.
